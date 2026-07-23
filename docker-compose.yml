@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - GEMINI_API_KEY=${AQ.Ab8RN6KOoRj--EQUIHajj9XrfHvgRriD4Ahanqa_zIGlFep8lw}
+    volumes:
+      - ./data:/app/data
